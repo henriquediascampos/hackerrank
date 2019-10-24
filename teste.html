@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="teste" style="display: flex; flex-wrap: wrap"></div>
+
+  <script>
+    function addelementeo(qtd) {
+    const arrayColors = [];
+    const element = document.getElementById('teste');
+    for(var i = 0; i < qtd; i++) {
+      const node = document.createElement("DIV");
+      const color = getRandomColor();
+
+      if (!arrayColors.includes(color)) {
+        arrayColors.push(color);
+        node.style.backgroundColor = color;
+        node.style.width = "30px"
+        node.style.height = "30px"
+        element.appendChild(node);
+      } else {
+        console.error('includes pra caralho: ', color)
+        i--;
+      }
+
+    }
+  }
+
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>

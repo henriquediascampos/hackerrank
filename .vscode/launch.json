@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MiniMaxSum",
+            "request": "launch",
+            "mainClass": "MiniMaxSum",
+            "projectName": "hackerrank_8207eebd"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Escada",
+            "request": "launch",
+            "mainClass": "Escada"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - escada",
+            "request": "launch",
+            "mainClass": "escada"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PlusMinus",
+            "request": "launch",
+            "mainClass": "PlusMinus"
+        }
+    ]
+}
